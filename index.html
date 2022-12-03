@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal BirthDay</title>
+    <style>
+body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+canvas{display:block}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+
+.image{
+    border-radius: 50% 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 150px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.circle1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; 
+        
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0%; top:0%;}
+  25%  {background-color:yellow; left:60%; top:0%;}
+  50%  {background-color:blue; left:60%; top:100%;}
+  /* 75%  {background-color:green; left:0%; top:100%;} */
+  100% {background-color:red; left:0%; top:0%;}
+  75%  {background-color:green; left:0%; top:100%;}
+  50%  {background-color:blue; left:60%; top:100%;}
+  25%  {background-color:yellow; left:60%; top:0%;}
+  0%   {background-color:red; left:0%; top:0%;}
+  /* 75%  {background-color:green; left:0px; top:400px;}
+  50%  {background-color:blue; left:200px; top:400px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  0%   {background-color:red; left:0px; top:0px;} */
+}
+.circle2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  background-color: red;
+  position: absolute;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+        
+}
+@keyframes example2 {
+  0%   {background-color:red; left:0%; top:0%;}
+  25%  {background-color:yellow; left:90%; top:0%;}
+  50%  {background-color:blue; left:90%; top:100%;}
+  75%  {background-color:green; left:0%; top:100%;}
+  100% {background-color:red; left:0%; top:0%;}
+  75%  {background-color:green; left:0%; top:100%;}
+  50%  {background-color:blue; left:100%; top:100%;}
+  25%  {background-color:yellow; left:90%; top:0%;}
+  0%   {background-color:red; left:0%; top:0%;}
+  /* 75%  {background-color:green; left:0px; top:400px;}
+  50%  {background-color:blue; left:200px; top:400px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  0%   {background-color:red; left:0px; top:0px;} */
+}
+
+    </style>
+</head>
+<body>
+    <div class="">
+        <h1 class="">Happy Birthday Kajal</h1>
+
+        <img src="./image/yellow2.jpg" alt="img" class="image"/>
+        <canvas id="birthday"></canvas>
+        <!-- <div class="circle"></div> -->
+        <div class="circle2"></div>
+        <!-- <div class="circle"></div> -->
+
+    </div>
+    
+</body>
+<script src="./Canvas.js"> </script>
+</html>
